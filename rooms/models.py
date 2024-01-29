@@ -30,8 +30,13 @@ class Room(CommonModel):
         on_delete=models.CASCADE,
     )
     amenities = models.ManyToManyField("rooms.Amenity")
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+
+    category = models.ForeignKey(
+        "catagories.Category",
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+    )
 
     def __str__(self) -> str:
         return self.name
