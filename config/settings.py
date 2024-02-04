@@ -46,6 +46,10 @@ CUSTOM_APPS = [
     "experiences.apps.ExperiencesConfig",
     "catagories.apps.CatagoriesConfig",
     "reviews.apps.ReviewsConfig",
+    "wishlists.apps.WishlistsConfig",
+    "booking.apps.BookingConfig",
+    "medias.apps.MediasConfig",
+    "direct_messages.apps.DirectMessagesConfig",
 ]
 
 INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
